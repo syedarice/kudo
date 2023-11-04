@@ -29,13 +29,13 @@ func (s sortableOp) AppVersion() string {
 func TestVersions(t *testing.T) {
 
 	l := SortableOperatorList{
-		sortableOp{name: "abc", appVersion: "aaa", ovVersion: "0.0.1"},
-		sortableOp{name: "abc", appVersion: "bbb", ovVersion: "0.1.0"},
-		sortableOp{name: "abc", appVersion: "aaa", ovVersion: "0.0.2"},
-		sortableOp{name: "abc", appVersion: "bbb", ovVersion: "0.0.1"},
+		sortableOp{name: "abc", appVersion: "aaaw", ovVersion: "0.0.1"},
+		sortableOp{name: "abc", appVersion: "bbbb", ovVersion: "0.1.0"},
+		sortableOp{name: "abc", appVersion: "aaaw", ovVersion: "0.0.2"},
+		sortableOp{name: "abc", appVersion: "bbbb", ovVersion: "0.0.1"},
 		sortableOp{name: "abc", appVersion: "0.0.1", ovVersion: "1.0.0"},
-		sortableOp{name: "abc", appVersion: "bbb", ovVersion: "1.1.0"},
-		sortableOp{name: "abc", appVersion: "bbb", ovVersion: "10.1.0"},
+		sortableOp{name: "abc", appVersion: "bbbb", ovVersion: "1.1.0"},
+		sortableOp{name: "abc", appVersion: "bbbb", ovVersion: "10.1.0"},
 		sortableOp{name: "abc", appVersion: "0.0.1", ovVersion: "10.1.0"},
 		sortableOp{name: "abc", appVersion: "0.0.9", ovVersion: "1.0.1"},
 		sortableOp{name: "abc", appVersion: "0.0.2", ovVersion: "1.0.0"},
